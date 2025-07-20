@@ -20,9 +20,9 @@ export const PlayerSetup: React.FC<PlayerSetupProps> = ({
   const [showSparkles, setShowSparkles] = useState(false)
 
   useEffect(() => {
-    // 자동으로 해완이 추가
+    // 자동으로 혜완이 추가
     if (players.length === 0) {
-      onAddPlayer('김해완')
+      onAddPlayer('김혜완')
     }
   }, [])
 
@@ -91,11 +91,11 @@ export const PlayerSetup: React.FC<PlayerSetupProps> = ({
       </div>
 
       <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 text-center max-w-lg w-full mx-4">
-        {/* 해완이 전용 환영 메시지 */}
+        {/* 혜완이 전용 환영 메시지 */}
         <div className="mb-8">
           <div className="text-8xl mb-4 animate-bounce">👋</div>
           <h1 className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 mb-4">
-            안녕 해완! 
+            안녕 혜완! 
           </h1>
           <h2 className="text-2xl font-bold text-purple-700 mb-4">
             게임을 시작해 볼까? 🎮
@@ -133,23 +133,23 @@ export const PlayerSetup: React.FC<PlayerSetupProps> = ({
                 <div
                   key={player}
                   className={`rounded-2xl p-4 flex items-center justify-between transition-all duration-300 ${
-                    player === '김해완' 
+                    player === '김혜완' 
                       ? 'bg-gradient-to-r from-yellow-200 to-orange-200 border-2 border-yellow-400' 
                       : 'bg-gradient-to-r from-blue-100 to-purple-100'
                   }`}
                 >
                   <div className="flex items-center">
                     <div className="text-2xl mr-3">
-                      {player === '김해완' ? '👑' : index === 0 ? '🥇' : index === 1 ? '🥈' : '🥉'}
+                      {player === '김혜완' ? '👑' : index === 0 ? '🥇' : index === 1 ? '🥈' : '🥉'}
                     </div>
                     <span className={`text-lg font-bold ${
-                      player === '김해완' ? 'text-orange-800' : 'text-gray-800'
+                      player === '김혜완' ? 'text-orange-800' : 'text-gray-800'
                     }`}>
                       {player}
-                      {player === '김해완' && <span className="ml-2">⭐</span>}
+                      {player === '김혜완' && <span className="ml-2">⭐</span>}
                     </span>
                   </div>
-                  {player !== '김해완' && (
+                  {player !== '김혜완' && (
                     <button
                       onClick={() => onRemovePlayer(player)}
                       className="text-red-500 hover:text-red-700 text-xl font-bold"
@@ -171,7 +171,7 @@ export const PlayerSetup: React.FC<PlayerSetupProps> = ({
             className="bg-gradient-to-r from-green-500 to-blue-500 text-white text-2xl font-bold py-6 px-8 rounded-3xl hover:from-green-600 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-2xl w-full"
             style={{ WebkitTapHighlightColor: 'transparent' }}
           >
-            🚀 해완이의 수학 모험 시작! 
+            🚀 혜완이의 수학 모험 시작! 
           </button>
         )}
       </div>

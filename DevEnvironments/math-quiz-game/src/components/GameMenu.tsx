@@ -39,7 +39,7 @@ export const GameMenu: React.FC<GameMenuProps> = ({
           {players.length > 0 && (
             <div className="mb-6 p-4 bg-gradient-to-r from-yellow-200 to-orange-200 rounded-2xl border-2 border-yellow-400">
               <h2 className="text-2xl font-bold text-orange-800 mb-2">
-                🎯 {currentPlayerName === '김해완' ? '해완이의 차례' : `${currentPlayerName}님의 차례`}
+                🎯 {currentPlayerName === '김혜완' ? '혜완이의 차례' : `${currentPlayerName}님의 차례`}
               </h2>
               <div className="text-base text-gray-700 font-semibold">
                 현재 총점: {currentPlayerScore}점 ⭐
@@ -51,7 +51,7 @@ export const GameMenu: React.FC<GameMenuProps> = ({
           )}
 
           <h1 className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 mb-2">
-            🔢 해완이의 수학 게임
+            🔢 혜완이의 수학 게임
           </h1>
           <h2 className="text-xl font-bold text-purple-700 mb-6">가전제품을 모아보자! 🎮</h2>
 

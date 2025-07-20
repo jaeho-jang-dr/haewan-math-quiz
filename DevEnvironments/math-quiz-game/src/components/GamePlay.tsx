@@ -49,7 +49,7 @@ export const GamePlay: React.FC<GamePlayProps> = ({
         const newStreak = prev + 1
         setMaxStreak(current => Math.max(current, newStreak))
         
-        // 해완이 격려 음성 (연속 맞출 때)
+        // 혜완이 격려 음성 (연속 맞출 때)
         if (newStreak === 3 || newStreak === 5) {
           setTimeout(() => encourageHaewan(), 2000)
         }
@@ -64,7 +64,7 @@ export const GamePlay: React.FC<GamePlayProps> = ({
       
       // 틀렸을 때 격려
       if (Math.random() < 0.3) { // 30% 확률로
-        setTimeout(() => speakKorean("괜찮아! 해완이는 할 수 있어!"), 2000)
+        setTimeout(() => speakKorean("괜찮아! 혜완이는 할 수 있어!", 0.95, 1.6), 2000)
       }
     }
 
