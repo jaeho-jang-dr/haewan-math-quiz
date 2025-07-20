@@ -1,7 +1,7 @@
 {
-  "name": "해완이의 수학 게임",
-  "short_name": "해완이수학",
-  "description": "김해완을 위한 재미있는 수학 학습 게임",
+  "name": "혜완이의 수학 게임",
+  "short_name": "혜완이수학",
+  "description": "김혜완을 위한 재미있는 수학 학습 게임",
   "theme_color": "#8B5CF6",
   "background_color": "#F8FAFC",
   "display": "standalone",

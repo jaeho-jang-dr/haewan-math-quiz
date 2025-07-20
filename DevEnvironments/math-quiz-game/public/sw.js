@@ -1,4 +1,4 @@
-// Service Worker for 해완이의 수학 게임
+// Service Worker for 혜완이의 수학 게임
 const CACHE_NAME = 'haewan-math-game-v1'
 const urlsToCache = [
   '/',
